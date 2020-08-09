@@ -1,0 +1,24 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify ./src/ScientificCalculator.js ./src/Logic.js > ./dist/bundle.js -d",
+    "build": "browserify ./src/ScientificCalculator.js ./src/Logic.js > ./dist/bundle.js --plugin tinyify",
+    "watch": "watchify ./src/ScientificCalculator.js ./src/Logic.js -o ./dist/bundle.js -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify-shim": "^3.8.14",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babelify": "^10.0.0",
+    "tinyify": "^3.0.0"
+  }
+}

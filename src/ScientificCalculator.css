@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background: linear-gradient(#78C8EE, #57BDED);
+    padding: 5%;
+}
+
+.textview{
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: none;
+}
+form{
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(35, auto);
+    background-color: #2385D3;
+    border-color: 0.5rem solid #93D9FA;
+    border-radius: 1rem;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #2487DA;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    background-color: #6CBCFC;
+    color: white;
+}
+/* .clicked{
+    background-color: "#8f8f8f";
+} */
+
+.delete > input:hover{
+    background-color: red;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.mode > input:hover{
+    background-color: magenta;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.memory > input:hover{
+    background-color: gold;
+    color: black;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.clear > input:hover{
+    background-color: orange;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.equals > input:hover{
+    background-color: green;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+input:hover{
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.textview:hover{
+    opacity: 1;
+}
+
+.input{
+    grid-area: span 1 / span 35;
+}
+#top{
+    grid-area: span 1 / span 5;
+}
+#bottom{
+    grid-area: span 1 / span 7;
+}
+.equals{
+    grid-area: span 1 / span 14;
+}
+.delete{
+    grid-area: span 1 / span 14;
+}
