@@ -141,7 +141,7 @@ exports.evaluate = function(input, mode) {
     }
     else if (input.includes('%')){
         let m = input.indexOf('%');
-        let n = parseInt(input.substring(0, m - 1));
+        let n = parseInt(input.substring(0, m));
         let k = parseInt(input.substring(m + 1, input.length));
 
         return n % k;
@@ -312,33 +312,25 @@ exports.evaluate = function(input, mode) {
                 eval.push(newReadPostFix[i]);
             }
             else if (typeof newReadPostFix[i] === 'string') {
+                num1 = eval.pop();
+                num2 = eval.pop();
                 if(newReadPostFix[i] == '+'){
-                    num1 = eval.pop();
-                    num2 = eval.pop();
                     ans2 = num2 + num1;
                     eval.push(ans2);
                 }
                 else if(newReadPostFix[i] == '-') {
-                    num1 = eval.pop();
-                    num2 = eval.pop();
                     ans2 = num2 - num1;
                     eval.push(ans2);
                 }
                 else if(newReadPostFix[i] == '*') {
-                    num1 = eval.pop();
-                    num2 = eval.pop();
                     ans2 = num2 * num1;
                     eval.push(ans2);
                 }
                 else if(newReadPostFix[i] == '/') {
-                    num1 = eval.pop();
-                    num2 = eval.pop();
                     ans2 = num2 / num1;
                     eval.push(ans2);
                 }
                 else if(newReadPostFix[i] == '^' ) {
-                    num1 = eval.pop();
-                    num2 = eval.pop();
                     if (num2 < 1) {
                         ans2 = Math.pow(num1, num2);
                     }

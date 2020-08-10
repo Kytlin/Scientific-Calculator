@@ -2,12 +2,9 @@ var $ = require('jquery');
 var algo = require('./Logic');
 var input = "";
 var memory = "";
-var ans  = false;
-var evaluate = false;
 
 var digits = false;
 var radians = true;
-var inverse = false;
 var phi = 0;
 var pow = 0;
 
