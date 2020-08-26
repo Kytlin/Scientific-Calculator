@@ -55,14 +55,25 @@ form{
     opacity: 0.6;
     transition: 0.5s;
 }
-.mode > input:hover{
+.deleteANS > input:hover{
+    background-color: gold;
+    color: black;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.addANS > input:hover{
+    background-color: gold;
+    color: black;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.mode1 > input:hover{
     background-color: magenta;
     opacity: 0.6;
     transition: 0.5s;
 }
-.memory > input:hover{
-    background-color: gold;
-    color: black;
+.mode2 > input:hover{
+    background-color: pink;
     opacity: 0.6;
     transition: 0.5s;
 }
@@ -96,6 +107,12 @@ input:hover{
 .equals{
     grid-area: span 1 / span 14;
 }
+.addANS{
+    grid-area: span 1 / span 3;
+}
+.deleteANS{
+    grid-area: span 1 / span 3;
+}
 .delete{
-    grid-area: span 1 / span 14;
+    grid-area: span 1 / span 15;
 }

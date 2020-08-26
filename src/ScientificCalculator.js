@@ -23,7 +23,8 @@ $(".btn").click(function() {
         }
     }
     
-    if (value == 'ANS'){
+    if (value == "M+"){
+        console.log("Here")
         if (memory.length > 0){
             document.form.textview.value += "ANS";
             input += memory;
@@ -34,13 +35,18 @@ $(".btn").click(function() {
             input = "";
         }
     }
+    else if (value == "M-"){
+        memory = "";
+    }
     else if (value == 'RAD'){
+        $(this).toggleClass("mode2");
+        $(this).val('DEG');
         radians = false;
-        document.getElementById("mode").value = "DEG";
     }
     else if (value == 'DEG'){
+        $(this).toggleClass("mode1");
+        $(this).val('RAD');
         radians = true;
-        document.getElementById("mode").value = "RAD";
     }
     else if (value == 'n!'){
         document.form.textview.value += '!';
