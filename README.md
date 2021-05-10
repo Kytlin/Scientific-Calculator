@@ -1,5 +1,7 @@
+# Scientific Calculator
+
 <center>
-    <img src="Calculator.png" width="80%" style="margin:2rem; border-radius:1rem">
+    <img src="CalculatorAnimation.gif" width="80%" style="margin:2rem; border-radius:1rem">
 </center>
 
 ## General Info
@@ -11,28 +13,31 @@ This project is a scientific calculator that runs on the browser. It provides sp
 ## Technologies
 Project is created with
 * HTML5 / CSS / JavaScript
-* BrowserifyJS version: 3.8.14
-* Babelify version: 10.0.0
-* Tinyify version: 3.0.0
-* jQuery version: 3.5.1
+* BrowserifyJS: v3.8.14
+* Babelify: v10.0.0
+* Tinyify: v3.0.0
+* jQuery: v3.5.1
 
 <br>
 
 ## Setup
-To run this project, ensure that node is installed on the system. This application is runned with "*Babel*" to allow live editing. To run this project, type the following commands in the terminal.
+
+To run this project, ensure that node is installed on the system by ```npm install```. This application is runned with "*Babel*" to allow live editing. To run this project, type the following commands in the terminal.
 
 <br>
 
 ```
 cd ../Scientific-Calculator
-npm run start
-npm run build
 npm run watch
 ```
+
+**Note**: Make sure watchify is installed locally (or globally) on your machine. The program will not run without it!
+
 <br>
 
+
 # Features
-The following special commands with their commands our listed below (don't forget to type parentheses when using these function; include comma for second argument as well):
+If you are reading this from Github, switch to light mode to see instructions on math functions. The following special commands with their commands our listed below (don't forget to type parentheses when using these function; include comma for second argument as well):
 
 <br>
 
@@ -40,6 +45,7 @@ The following special commands with their commands our listed below (don't forge
 
 Combinations (nCr): <hr>
 * Formula: 
+
 <img src="https://render.githubusercontent.com/render/math?math=\,\, \frac{n!}{r!(n-r)!}">
 * Parameters: <img src="https://render.githubusercontent.com/render/math?math=\,\, n,r \, \epsilon \, \mathbb{Z} \, | \, n \geq r">
 
